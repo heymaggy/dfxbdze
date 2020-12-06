@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Johnny's projects</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+
+    <div id="headerBar">
+        <!-- Title -->
+        <h1 id="pageTitle">Projects
+            <!-- <img id="headerSwirl" src="swirl.png"> -->
+        </h1>
+
+        <!-- Navigation bar -->
+        <div class="navigationBar">
+            <table>
+                <td>
+                    <a class="navigationBarCurrent" href="index.html">JavaScript</a>
+                </td>
+                <td>
+                    <a class="navigationBarIdle" href="python.html">Python</a>
+                </td>
+                <td>
+                    <a class="navigationBarIdle" href="android.html">Android</a>
+                </td>
+            </table>
+        </div>
+    </div>
+
+    <!-- Game links -->
+    <div class="gameLinkTable" style="margin-bottom:10vw">
+        <table id="gameLinkTable">
+        </table>
+    </div>
+
+    <script src="scripts/buildTable.js"></script>
+    <script>
+        buildTable("gameLinkTable", [{
+            title: "Snake",
+            desc: "Remake of the classic snake game",
+            type: "JavaScript, Click to play!",
+            link: "https://johnnyhowe.github.io/Snake-JS/",
+            iconFilepath: "./thumbnails/snake.png"
+        }, {
+            title: "Flappy Bird",
+            desc: "Rip off of that popular game",
+            type: "JavaScript, Click to play!",
+            link: "https://anwildduck.github.io/flappybird/",
+            iconFilepath: "./thumbnails/flappybird.png"
+        }, ]);
+    </script>
+
+</body>
+
+</html>

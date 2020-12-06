@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Johnny's projects</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+
+    <div id="headerBar">
+        <!-- Title -->
+        <h1 id="pageTitle">Projects
+            <!-- <img id="headerSwirl" src="swirl.png"> -->
+        </h1>
+
+        <!-- Navigation bar -->
+        <div class="navigationBar">
+            <table>
+                <td>
+                    <a class="navigationBarIdle" href="index.html">JavaScript</a>
+                </td>
+                <td>
+                    <a class="navigationBarIdle" href="python.html">Python</a>
+                </td>
+                <td>
+                    <a class="navigationBarCurrent" href="android.html">Android</a>
+                </td>
+            </table>
+        </div>
+    </div>
+
+    <!-- Python install link -->
+    <div class="pythonInstallLink">
+        <p class="pythonLinkBig">
+            <br />These
+            <br />are android games.
+            <br />Download on Android
+            <br />.
+        </p>
+    </div>
+
+    <!-- Game links -->
+    <div class="gameLinkTable" style="margin-bottom:10vw">
+        <table id="gameLinkTable">
+        </table>
+    </div>
+
+    <script src="scripts/buildTable.js"></script>
+    <script>
+        buildTable("gameLinkTable", [{
+            title: "Jump",
+            desc: "Wall jump up higher and higher",
+            type: "Android, Click to go to the Play Store!",
+            link: "https://play.google.com/store/apps/details?id=com.UnluckyDuck.Jump",
+            iconFilepath: "./thumbnails/jump.png"
+        }, {
+            title: "Tower Dropper",
+            desc: "Stack up the tower higher and higher",
+            type: "Android, Click to go to the Play Store!",
+            link: "https://play.google.com/store/apps/details?id=com.DefaultCompany.TowerDropper",
+            iconFilepath: "./thumbnails/towerdropper.png"
+        }, {
+            title: "Cave Rush",
+            desc: "Run through a cave, go fast!",
+            type: "Android, Click to go to the Play Store!",
+            link: "https://play.google.com/store/apps/details?id=com.UnluckyDuck.CaveRush",
+            iconFilepath: "./thumbnails/caverush.png"
+        }, ]);
+    </script>
+</body>
+
+</html>
